@@ -30,10 +30,10 @@ let g:SuperTabDefaultCompletionType = 'c-n'
 
 " Activar autocompletado
 let g:deoplete#enable_at_startup = 1
-augroup deopleteCompleteDoneAu
-	autocmd!
-	autocmd CompleteDone * silent! pclose!
-augroup END
+" augroup deopleteCompleteDoneAu
+	"autocmd!
+	"autocmd CompleteDone * silent! pclose!
+" augroup END
 
 " Colores
 set termguicolors
