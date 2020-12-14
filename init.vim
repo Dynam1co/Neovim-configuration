@@ -1,6 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-surround' " Mostrar llaves, paréntesis etc
 Plug 'zanglg/nova.vim' " Tema
+Plug 'drewtempelmeyer/palenight.vim' " Tema
+Plug 'ayu-theme/ayu-vim' " Tema
+Plug 'arcticicestudio/nord-vim' " Tema
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline' " Barra de estado
 Plug 'vim-airline/vim-airline-themes' " Barra de estado
@@ -38,7 +41,10 @@ let g:deoplete#enable_at_startup = 1
 " Colores
 set termguicolors
 set background=dark
-colorscheme nova
+"colorscheme nova
+colorscheme palenight
+"colorscheme ayu
+"colorscheme nord
 
 " Barra de estado de abajo
 let g:airline#extensions#tabline#enabled = 1
