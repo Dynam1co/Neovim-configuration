@@ -34,10 +34,6 @@ let g:SuperTabDefaultCompletionType = 'c-n'
 
 " Activar autocompletado
 let g:deoplete#enable_at_startup = 1
-" augroup deopleteCompleteDoneAu
-	"autocmd!
-	"autocmd CompleteDone * silent! pclose!
-" augroup END
 
 " Colores
 set termguicolors
@@ -65,3 +61,9 @@ let NERDTreeQuitOnOpen=1 " Cierra el árbol al abrir un archivo
 
 " Python syntax
 let g:python_highlight_all = 1
+
+" Configuración específica de Neovim
+set number " Mostrar números de línea
+set mouse=a " Integración con ratón
+set cursorline  " Resalta la línea actual
+set colorcolumn=120  " Muestra la columna límite a 120 caracteres
