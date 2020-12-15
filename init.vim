@@ -17,6 +17,7 @@ Plug 'Shougo/echodoc.vim' " Muestra la firma de la función
 Plug 'dense-analysis/ale' " Analizador de código
 Plug 'sheerun/vim-polyglot' " Resaltado de sintaxis
 Plug 'Xuyuanp/nerdtree-git-plugin' " Estado del archivo en git en nerdtree
+Plug 'vim-python/python-syntax' " Resaltar sintaxis de Python
 call plug#end()
 
 " Mostrar errores del analizador de código
@@ -61,3 +62,6 @@ let mapleader=" "
   " espacio + n + t para abrir nerd tree
 nmap <Leader>nt :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1 " Cierra el árbol al abrir un archivo
+
+" Python syntax
+let g:python_highlight_all = 1
