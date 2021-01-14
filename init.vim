@@ -18,6 +18,8 @@ Plug 'dense-analysis/ale' " Analizador de código
 Plug 'sheerun/vim-polyglot' " Resaltado de sintaxis
 Plug 'Xuyuanp/nerdtree-git-plugin' " Estado del archivo en git en nerdtree
 Plug 'vim-python/python-syntax' " Resaltar sintaxis de Python
+Plug 'davidhalter/jedi-vim' " Autocompletado Python
+Plug 'numirias/semshi' " Python semantic highlighting
 call plug#end()
 
 " Mostrar errores del analizador de código
