@@ -63,6 +63,10 @@ let mapleader=" "
 nmap <Leader>nt :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1 " Cierra el árbol al abrir un archivo
 
+" Al pusar Space+w guarda y al pulsar Space+q sale
+nmap <Leader>w :w<CR>
+nmap <Leader>q :q<CR>
+
 " Python syntax
 let g:python_highlight_all = 1
 
@@ -72,6 +76,10 @@ set mouse=a " Integración con ratón
 set cursorline  " Resalta la línea actual
 set colorcolumn=120  " Muestra la columna límite a 120 caracteres
 set encoding=utf-8
+set clipboard=unnamed  " Habilitar el clipboard entre neovim y el sistema operativo
+syntax enable " Resaltar sintaxis
+set showcmd " Mostrar los comandos que escribo
+set relativenumber " Reordena los números de línea
 
 " Reemplazar tabs por espacios
 set tabstop=2 shiftwidth=2 expandtab
