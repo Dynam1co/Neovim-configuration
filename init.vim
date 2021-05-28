@@ -24,6 +24,10 @@ Plug 'davidhalter/jedi-vim', {'for': 'python'} " Autocompletado Python
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'} " Python semantic highlighting
 call plug#end()
 
+" Air-line
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1  " Mostrar nº de buffer
+
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
