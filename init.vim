@@ -5,7 +5,8 @@ Plug 'drewtempelmeyer/palenight.vim' " Tema
 Plug 'ayu-theme/ayu-vim' " Tema
 Plug 'arcticicestudio/nord-vim' " Tema
 Plug 'fcpg/vim-orbital' " Tema
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'  
+Plug 'scrooloose/syntastic'  " Mostrar errores con lopen
 Plug 'vim-airline/vim-airline' " Barra de estado
 Plug 'vim-airline/vim-airline-themes' " Barra de estado
 Plug 'Yggdroot/indentLine' " Niveles de indentación
@@ -23,10 +24,18 @@ Plug 'davidhalter/jedi-vim', {'for': 'python'} " Autocompletado Python
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'} " Python semantic highlighting
 call plug#end()
 
+" syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_aggregate_errors = 1
+
 " Mostrar errores del analizador de código
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+"let g:ale_echo_msg_error_str = 'E'
+"let g:ale_echo_msg_warning_str = 'W'
+"let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 " Activar echodoc al iniciar
 set noshowmode
