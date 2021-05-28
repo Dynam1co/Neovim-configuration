@@ -19,7 +19,7 @@ Plug 'dense-analysis/ale' " Analizador de código
 Plug 'sheerun/vim-polyglot' " Resaltado de sintaxis
 Plug 'Xuyuanp/nerdtree-git-plugin' " Estado del archivo en git en nerdtree
 Plug 'vim-python/python-syntax' " Resaltar sintaxis de Python
-Plug 'davidhalter/jedi-vim' " Autocompletado Python
+Plug 'davidhalter/jedi-vim', {'for': 'python'} " Autocompletado Python
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'} " Python semantic highlighting
 call plug#end()
 
