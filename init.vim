@@ -22,6 +22,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin' " Estado del archivo en git en nerdtree
 Plug 'vim-python/python-syntax' " Resaltar sintaxis de Python
 Plug 'davidhalter/jedi-vim', {'for': 'python'} " Autocompletado Python
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'} " Python semantic highlighting
+Plug 'vimlab/split-term.vim' " Terminal
 call plug#end()
 
 " Air-line
@@ -96,3 +97,8 @@ set relativenumber " Reordena los números de línea
 
 " Reemplazar tabs por espacios
 set tabstop=2 shiftwidth=2 expandtab
+
+" split-term
+g:split_term_vertical
+set splitright
+nmap <Leader>t :VTerm<CR>
